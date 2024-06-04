@@ -1,0 +1,8 @@
+drf 
+
+
+to get single data 
+
+stu=Student.objects.get(id=1)
+serializer=StudentSerializer(stu)
+json_data=JSONRenderer().render(serializer.data)
